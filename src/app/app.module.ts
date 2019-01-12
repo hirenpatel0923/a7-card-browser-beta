@@ -10,6 +10,7 @@ import { SideNavComponent } from './component/side-nav/side-nav.component';
 import { GroupIconListComponent } from './component/side-nav/group-icon-list/group-icon-list.component';
 import { WorkSpaceComponent } from './component/work-space/work-space.component';
 import { CardComponent } from './component/work-space/card/card.component';
+import { DragDropCardComponent } from './component/work-space/drag-drop-card/drag-drop-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CardComponent } from './component/work-space/card/card.component';
     SideNavComponent,
     GroupIconListComponent,
     WorkSpaceComponent,
-    CardComponent
+    CardComponent,
+    DragDropCardComponent
   ],
   imports: [
     BrowserModule,
