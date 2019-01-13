@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GroupIconListComponent } from './group-icon-list.component';
+import { GroupListStartComponent } from './group-list-start.component';
 
-describe('GroupIconListComponent', () => {
-  let component: GroupIconListComponent;
-  let fixture: ComponentFixture<GroupIconListComponent>;
+describe('GroupListStartComponent', () => {
+  let component: GroupListStartComponent;
+  let fixture: ComponentFixture<GroupListStartComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ GroupIconListComponent ]
+      declarations: [ GroupListStartComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(GroupIconListComponent);
+    fixture = TestBed.createComponent(GroupListStartComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
