@@ -1,31 +1,59 @@
 <mat-toolbar color="primary" class="top-toolbar">
     <!-- <span>Third Line</span> -->
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
-    <mat-icon class="example-icon">favorite</mat-icon>
+    <!-- <div class="row">
+      <div class="col-md-2">
+    <a role="button" style="padding: 0px 5px;">
+      <i class="fa fa-plus" style="color:red;" aria-hidden="true"></i>
+    </a></div>
+    <div class="col-5">
+    <div class="input-group input-group-sm">
+      <span class="input-group-addon" id="sizing-addon3">@</span>
+      <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon3">
+    </div>
+  </div>
+    </div> -->
 
-    <form class="example-form">
-      <mat-form-field class="example-full-width">
-        <input matInput value="Search">
-      </mat-form-field>
-    </form>
+    <a mat-button style="left:-10px;">
+        <!-- <i class="fa fa-plus" style="color:red;" aria-hidden="true"></i> -->
+        <mat-icon aria-label="Example icon-button with a heart icon">add</mat-icon>
+    </a>
+    <div class="input-group input-group-sm">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          </button>
+          <button class="btn btn-default" type="button">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          </button>
+        </span>
+        <input type="text" class="form-control" placeholder="search here" aria-describedby="sizing-addon3" style="margin: 1px 0px;width:800px;">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+                <span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+            </button>
+        </span>
+      </div>
+      <div class="btn-group btn-group-sm" role="group" aria-label="" style="margin-left: 50px;">
+          <a mat-button style="padding: 0px !important;min-width: 40px !important; ">
+              <mat-icon aria-label="Example icon-button with a heart icon" style="padding: 0px !important;">history</mat-icon>
+          </a>
+          <a mat-button style="padding: 0px !important;min-width: 40px !important;">   
+              <mat-icon aria-label="Example icon-button with a heart icon" style="padding: 0px !important;">bookmarks</mat-icon>
+          </a>
+          <a mat-button style="padding: 0px !important;min-width: 40px !important;">
+              <mat-icon aria-label="Example icon-button with a heart icon">arrow_downward</mat-icon>
+          </a>
+      </div>
     <span class="example-spacer"></span>
-    
-    <mat-icon class="example-icon">favorite</mat-icon>
-    <mat-icon class="example-icon">delete</mat-icon>
-
+      <div class="btn-group btn-group-sm" role="group" aria-label="">
+          <a mat-button style="padding: 0px !important;min-width: 40px !important; ">
+              <mat-icon aria-label="Example icon-button with a heart icon" style="padding: 0px !important;">minimize</mat-icon>
+          </a>
+          <a mat-button style="padding: 0px !important;min-width: 40px !important;">   
+              <mat-icon aria-label="Example icon-button with a heart icon" style="padding: 0px !important;">fullscreen</mat-icon>
+          </a>
+          <a mat-button style="padding: 0px !important;min-width: 40px !important;">
+              <mat-icon aria-label="Example icon-button with a heart icon">close</mat-icon>
+          </a>
+      </div>
 </mat-toolbar>
