@@ -17,5 +17,6 @@ export class CreateCardComponentService {
      const factory = this.factoryResolver.resolveComponentFactory(CardComponent);
      const component = factory.create(this.rootViewContainer.parentInjector);
      this.rootViewContainer.insert(component.hostView);
+     component.instance._ref = component;
    }
 }

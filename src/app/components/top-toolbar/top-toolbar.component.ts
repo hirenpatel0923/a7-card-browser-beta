@@ -19,7 +19,7 @@ export class TopToolbarComponent implements OnInit {
     this.createCardComponentDataService.currentNumber.subscribe(number => this.number = number);
   }
 
-  incrementNumber() {
+  addNewCard() {
     this.createCardComponentDataService.changeNumber();
     this.createCardComponentService.addDynamicComponent();
   }

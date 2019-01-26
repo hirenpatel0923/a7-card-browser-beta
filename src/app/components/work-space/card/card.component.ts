@@ -9,6 +9,8 @@ import 'jquery-ui-dist/jquery-ui.js';
 })
 export class CardComponent implements OnInit {
 
+  _ref: any;
+
   constructor() {
     // $(function() {
     //   $('.example-card').resizable();
@@ -18,4 +20,7 @@ export class CardComponent implements OnInit {
   ngOnInit() {
   }
 
+  removeCard() {
+    this._ref.destroy();
+  }
 }
