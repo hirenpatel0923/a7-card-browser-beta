@@ -1,5 +1,5 @@
 import { Component, Inject, ViewContainerRef, OnInit } from '@angular/core';
-import { CardCreateService } from '../../../services/components/card/card-create.service';
+import { CreateCardComponentService } from '../../../services/components/card/create-card-component.service';
 
 @Component({
   selector: 'app-card-container',
@@ -8,9 +8,9 @@ import { CardCreateService } from '../../../services/components/card/card-create
 })
 export class CardContainerComponent implements OnInit {
 
-  constructor(private cardCreateService: CardCreateService, private viewContainerRef: ViewContainerRef) { 
-    this.cardCreateService.setRootViewContainerRef(viewContainerRef);
-    this.cardCreateService.addDynamicComponent();
+  constructor(private createCardComponentService: CreateCardComponentService, private viewContainerRef: ViewContainerRef) {
+    this.createCardComponentService.setRootViewContainerRef(viewContainerRef);
+    // this.createCardComponentService.addDynamicComponent();
   }
 
   ngOnInit() {

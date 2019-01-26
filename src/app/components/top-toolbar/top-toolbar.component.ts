@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CreateCardComponentDataService } from '../../services/shared-services/card/create-card-component-data.service';
+import { CreateCardComponentService } from '../../services/components/card/create-card-component.service';
 
 @Component({
   selector: 'app-top-toolbar',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopToolbarComponent implements OnInit {
 
-  constructor() { }
+  number: number;
 
-  ngOnInit() {
+  constructor(private createCardComponentDataService: CreateCardComponentDataService,
+              private createCardComponentService: CreateCardComponentService) {
   }
 
+  ngOnInit() {
+    this.createCardComponentDataService.currentNumber.subscribe(number => this.number = number);
+  }
+
+  incrementNumber() {
+    this.createCardComponentDataService.changeNumber();
+    this.createCardComponentService.addDynamicComponent();
+  }
 }

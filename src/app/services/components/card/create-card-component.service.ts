@@ -4,7 +4,7 @@ import { CardComponent } from '../../../components/work-space/card/card.componen
 @Injectable({
   providedIn: 'root'
 })
-export class CardCreateService {
+export class CreateCardComponentService {
   rootViewContainer;
   constructor(private factoryResolver: ComponentFactoryResolver) {
    }

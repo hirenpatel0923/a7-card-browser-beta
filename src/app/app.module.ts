@@ -8,7 +8,7 @@ import { MaterialModule } from './material';
 
 import { WebviewDirective } from './webview.directive';
 
-import { CardCreateService } from './services/components/card/card-create.service';
+import { CreateCardComponentService } from './services/components/card/create-card-component.service';
 
 import { TopToolbarComponent } from './components/top-toolbar/top-toolbar.component';
 import { SideNavComponent } from './components/side-nav/side-nav.component';
@@ -36,7 +36,7 @@ import { CardContainerComponent } from './components/work-space/card-container/c
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [CardCreateService],
+  providers: [CreateCardComponentService],
   entryComponents: [CardComponent],
   bootstrap: [AppComponent]
 })
