@@ -8,13 +8,15 @@ import { MaterialModule } from './material';
 
 import { WebviewDirective } from './webview.directive';
 
-import { TopToolbarComponent } from './component/top-toolbar/top-toolbar.component';
-import { SideNavComponent } from './component/side-nav/side-nav.component';
-import { WorkSpaceComponent } from './component/work-space/work-space.component';
-import { CardComponent } from './component/work-space/card/card.component';
-import { GroupListStartComponent } from './component/side-nav/group-list-start/group-list-start.component';
-import { GroupListEndComponent } from './component/side-nav/group-list-end/group-list-end.component';
-import { CardContainerComponent } from './component/work-space/card-container/card-container.component';
+import { CardCreateService } from './services/components/card/card-create.service';
+
+import { TopToolbarComponent } from './components/top-toolbar/top-toolbar.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { WorkSpaceComponent } from './components/work-space/work-space.component';
+import { CardComponent } from './components/work-space/card/card.component';
+import { GroupListStartComponent } from './components/side-nav/group-list-start/group-list-start.component';
+import { GroupListEndComponent } from './components/side-nav/group-list-end/group-list-end.component';
+import { CardContainerComponent } from './components/work-space/card-container/card-container.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { CardContainerComponent } from './component/work-space/card-container/ca
     BrowserAnimationsModule,
     MaterialModule
   ],
-  providers: [],
+  providers: [CardCreateService],
+  entryComponents: [CardComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
