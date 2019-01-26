@@ -12,9 +12,9 @@ import { TopToolbarComponent } from './component/top-toolbar/top-toolbar.compone
 import { SideNavComponent } from './component/side-nav/side-nav.component';
 import { WorkSpaceComponent } from './component/work-space/work-space.component';
 import { CardComponent } from './component/work-space/card/card.component';
-import { DragDropCardComponent } from './component/work-space/drag-drop-card/drag-drop-card.component';
 import { GroupListStartComponent } from './component/side-nav/group-list-start/group-list-start.component';
 import { GroupListEndComponent } from './component/side-nav/group-list-end/group-list-end.component';
+import { CardContainerComponent } from './component/work-space/card-container/card-container.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +24,9 @@ import { GroupListEndComponent } from './component/side-nav/group-list-end/group
     SideNavComponent,
     WorkSpaceComponent,
     CardComponent,
-    DragDropCardComponent,
     GroupListStartComponent,
-    GroupListEndComponent
+    GroupListEndComponent,
+    CardContainerComponent
   ],
   imports: [
     BrowserModule,

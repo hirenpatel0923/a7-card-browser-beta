@@ -10,9 +10,9 @@ import 'jquery-ui-dist/jquery-ui.js';
 export class CardComponent implements OnInit {
 
   constructor() {
-    $(function() {
-      $('.example-card').resizable();
-    });
+    // $(function() {
+    //   $('.example-card').resizable();
+    // });
    }
 
   ngOnInit() {
