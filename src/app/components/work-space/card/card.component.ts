@@ -10,6 +10,7 @@ import 'jquery-ui-dist/jquery-ui.js';
 export class CardComponent implements OnInit {
 
   _ref: any;
+  _card_number: number;
 
   constructor() {
     // $(function() {

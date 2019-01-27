@@ -5,6 +5,7 @@ import { CardComponent } from '../../../components/work-space/card/card.componen
   providedIn: 'root'
 })
 export class CreateCardComponentService {
+  cardCount = 0;
   rootViewContainer;
   constructor(private factoryResolver: ComponentFactoryResolver) {
    }
@@ -18,5 +19,8 @@ export class CreateCardComponentService {
      const component = factory.create(this.rootViewContainer.parentInjector);
      this.rootViewContainer.insert(component.hostView);
      component.instance._ref = component;
+
+     this.cardCount = this.cardCount + 1;
+     component.instance._card_number = this.cardCount;
    }
 }

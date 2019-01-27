@@ -1,9 +1,9 @@
 <div cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
     <div class="example-box" *ngFor="let color of colors" cdkDrag>
-      <div class="example-custom-placeholder" *cdkDragPlaceholder></div>
-        <a mat-button><i class="fa fa-circle-o" aria-hidden="true" [ngStyle]="{'color': color}"></i></a>
+      <div class="example-custom-placeholder" *cdkDragPlaceholder ></div>
+        <a mat-button><i class="fa fa-circle-o" aria-hidden="true" (click)="clicked($event)" [ngStyle]="{'color': color}"></i></a>
     </div>
     <div class="example-box">
-          <a mat-button><i class="fa fa-plus" aria-hidden="true"></i></a>
-      </div>
+        <a mat-button><i class="fa fa-plus" aria-hidden="true" (click)="getRandomColor()"></i></a>
+    </div>
   </div>
