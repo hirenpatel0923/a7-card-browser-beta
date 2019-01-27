@@ -11,6 +11,7 @@ export class CardComponent implements OnInit {
 
   _ref: any;
   _card_number: number;
+  _group_color: string;
 
   constructor() {
     // $(function() {
